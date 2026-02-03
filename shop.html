@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Reindeer Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a class="logo" href="index.html">Reindeer Atelier</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a class="active" href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+            </div>
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <main class="page">
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2>Shop the collection</h2>
+                    <p style="color: var(--muted);">A curated edit of statement essentials for every season.</p>
+                </div>
+                <button class="secondary-btn ripple">Filter</button>
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">Designed for confident, modern wardrobes.</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

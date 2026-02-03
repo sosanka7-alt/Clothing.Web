@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reindeer Construction | Jorhat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064e3b', // emerald-900
+                        secondary: '#111827', // gray-900
+                        accent: '#f59e0b', // amber-500
+                        light: '#f8fafc', // slate-50
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #064e3b;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #042f2e;
+        }
+
+        body {
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<title>Reindeer Atelier | Wear Your Style</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
+<nav>
+    <div class="navbar">
+        <a class="logo" href="index.html">Reindeer Atelier</a>
+        <div class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+        </div>
+        <button class="menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </div>
+</nav>
+
+<main class="page">
+    <section class="hero">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="hero-content">
+            <div>
+                <h1>Wear Your Style</h1>
+                <p>
+                    The new-season edit is here. Effortless silhouettes, refined textures, and elevated essentials
+                    designed to
+                    move with you.
+                </p>
+                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a class="primary-btn ripple" href="shop.html">Shop Now</a>
+                    <a class="secondary-btn ripple" href="about.html">Our Story</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Premium Craft</h3>
+                <p>
+                    Curated collections inspired by modern tailoring. Discover pieces that feel as luxurious as they
+                    look.
+                </p>
+                <div style="margin-top: 24px; display: grid; gap: 12px;">
+                    <div class="card" style="background: rgba(255, 255, 255, 0.7);">
+                        <strong>150+ new drops</strong>
+                        <p style="color: var(--muted);">Updated weekly with fresh silhouettes.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255, 255, 255, 0.7);">
+                        <strong>Worldwide delivery</strong>
+                        <p style="color: var(--muted);">Express shipping in 48 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>Featured edits</h2>
+            <a class="secondary-btn ripple" href="shop.html">View All</a>
+        </div>
+        <div class="product-grid" id="featured-products"></div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="card" style="max-width: 1100px; margin: 0 auto;">
+            <div class="section-header" style="margin-bottom: 24px;">
+                <h2>Signature styling</h2>
+            </div>
+            <p style="color: var(--muted);">
+                Pair soft pastels with sculptural black accents. Our stylists craft a modern capsule that layers
+                seamlessly
+                between day and night.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">© 2025 Reindeer Atelier. Crafted for modern wardrobes.</footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>

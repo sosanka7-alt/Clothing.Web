@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Reindeer Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a class="logo" href="index.html">Reindeer Atelier</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+            </div>
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <main class="page">
+        <section class="section">
+            <div class="section-header">
+                <h2>Your cart</h2>
+                <a class="secondary-btn ripple" href="shop.html">Continue Shopping</a>
+            </div>
+            <div class="cart-page">
+                <div class="cart-list" id="cart-list"></div>
+                <div class="cart-summary">
+                    <h3>Order summary</h3>
+                    <div class="totals">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="totals">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="totals">
+                        <span>Estimated Total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    <a class="primary-btn ripple" href="payment.html"
+                        style="width: 100%; margin-top: 20px; display: inline-block; text-align: center;">Checkout</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">Secure checkout powered by Reindeer Atelier.</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

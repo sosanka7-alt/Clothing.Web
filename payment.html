@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | Reindeer Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a class="logo" href="index.html">Reindeer Atelier</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a class="cart-pill" href="cart.html">Cart <span class="cart-count">0</span></a>
+            </div>
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <main class="page">
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2>Secure payment</h2>
+                    <p style="color: var(--muted);">Complete your order with a smooth, secure checkout.</p>
+                </div>
+                <a class="secondary-btn ripple" href="shop.html">Continue Shopping</a>
+            </div>
+            <div class="payment-grid">
+                <div>
+                    <h3 style="margin-bottom: 16px;">Order summary</h3>
+                    <div class="payment-summary" id="payment-summary"></div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Payment details</h3>
+                    <form class="payment-form">
+                        <input type="text" placeholder="Cardholder name" required />
+                        <input type="text" placeholder="Card number" required />
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <input type="text" placeholder="MM / YY" required />
+                            <input type="text" placeholder="CVV" required />
+                        </div>
+                        <select required>
+                            <option value="">Select shipping speed</option>
+                            <option>Standard (3-5 days)</option>
+                            <option>Express (1-2 days)</option>
+                        </select>
+                        <div class="totals">
+                            <span>Total</span>
+                            <strong id="payment-total">$0.00</strong>
+                        </div>
+                        <button class="primary-btn ripple" type="submit">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">Protected payment and encrypted data.</footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
